@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.visual {
+    width: 100%; height: 550px;
+    border: 1px solid #f00;
+}
+.visual .slick-prev{left: 100px; z-index: 10000;
+    border: 10px solid #000;
+  }
+.slide {
+    width: 100%; height: 550px;
+    background-repeat: no-repeat; background-position: center center; background-size: cover;
+}
+.slide1{background-image: url(../img/mainslide01.jpg);}
+.slide2{background-image: url(../img/mainslide02.jpg);}
+.slide3{background-image: url(../img/mainslide03.jpg);}
