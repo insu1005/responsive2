@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/respon02.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Document</title>
 </head>
 <body>
@@ -15,10 +16,13 @@
         <div class="inner">
             <h1 class="logo"><a href="#">로고</a></h1>
             <div class="nav-wrap">
-                <nav class="tnb">
-                    <a href="#">로그인</a>
-                    <a href="#">회원가입</a>
-                </nav>
+                <h2 class="hidden">메인메뉴</h2>
+                <div class="nav-wrap-box">
+                    <nav class="tnb">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </nav>
+                </div>
                 <nav class="gnb">
                     <ul>
                         <li class="depth1"><a href="#">여행정보</a>
@@ -49,8 +53,14 @@
                 </nav>
             </div>
         </div>
+        <button type="button" class="all-menu">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </button>
     </header>
     <main class="container">
+        <h2 class="hidden">메인콘텐츠</h2>
         <section class="visual">
             <div class="slide slide1">
                 <div class="inner">1</div>
@@ -62,9 +72,68 @@
                 <div class="inner">3</div>
             </div>
         </section>
-        <button class="play">start</button>
-        <button class="pause">pause</button>
-        <div class="inner"></div>
+        <div class="container-wrap">
+            <section class="top3">
+                <div class="inner">
+                    <h3 class="tit">다시 찾는 인기 여행지 TOP3</h3>
+                    <div class="top3-wrap clearfix">
+                        <article class="top3-article">
+                            <figure><img src="img/img_topplace01.jpg" alt=""></figure>
+                            <div class="top3-article-txt">
+                                <em>성패트릭 대성당</em>
+                                <p>바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의 시간!</p>
+                                <a href="" class="more">VIEW</a>
+                            </div>
+                        </article>
+                        <article class="top3-article">
+                            <figure><img src="img/img_topplace02.jpg" alt=""></figure>
+                            <div class="top3-article-txt">
+                                <em>원주 뮤지엄 '산'</em>
+                                <p>전시된 유산들을 담아낸 건물에 신비로운 돌과 물의 테마가 담겨 있다.</p>
+                                <a href="" class="more">VIEW</a>
+                            </div>
+                        </article>
+                        <article class="top3-article">
+                            <figure><img src="img/img_topplace03.jpg" alt=""></figure>
+                            <div class="top3-article-txt">
+                                <em>일본 만국박람회 기념 공원</em>
+                                <p>오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께 하는 문화가 있다.</p>
+                                <a href="" class="more"> VIEW</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="bbs clearfix">
+                <h3 class="hidden">sns와 게시판</h3>
+                <div class="inner">
+                    <article class="sns">
+                        <h4 class="hidden">sns</h4>
+                        <a href="#">카카오톡 1:1 상담</a>
+                        <a href="#">전화 상담 신청</a>
+                    </article>
+                    <article class="notice">
+                        <h4>NOTICE</h4>
+                        <ul class="notice-list">
+                            <li><a href="#">이번 여름 휴가 제주 갈까? 미션 투어 (여행경비 50만원 지원)</a></li>
+                            <li><a href="#">박물관 미션 투어 응모 당첨자 발표</a></li>
+                            <li><a href="#">추석 연휴 티켓/투어 배송 및 직접 수령 안내</a></li>
+                            <li><a href="#">하롱베이 서비스 OPEN! (여행정보, 가이드북, 가이드맵)</a></li>
+                            <li><a href="#">투어리스트인투어 서비스 점검 안내</a></li>
+                        </ul>
+                        <a href="#" class="more">더보기</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <aside class="quick">
+            <ul>
+                <li><a href="#">전화문의<span>010.111.1111</span></a></li>
+                <li><a href="#">카카오톡<span>1:1 상담</span></a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+            <button type="button" class="quick-top">TOP</button>
+        </aside>
     </main>
     <footer>
         <div class="inner"></div>
@@ -77,6 +146,7 @@
     <script type="text/javascript">
        $(document).ready(function(){
       $('.visual').slick({
+        fade:true,
         autoplay: true,
         loop:true,
         autoplaySpeed: 5000,
@@ -87,14 +157,7 @@
         adaptiveHeight: true,
         autoplayDisableOnInteraction: false
       });
-    });
-    $('.play').on('click', function() {
-        $('.visual').slick('slickPlay');
-    });
-        $('.pause').on('click', function() {
-        $('.visual').slick('slickPause');
-    });
-       
+    });       
     </script>
 </body>
 </html>
