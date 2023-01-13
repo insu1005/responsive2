@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/respon02.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -54,9 +56,7 @@
             </div>
         </div>
         <button type="button" class="all-menu">
-            <span class="material-symbols-outlined">
-                menu
-                </span>
+            <span class="material-symbols-outlined"> menu</span>
         </button>
     </header>
     <main class="container">
@@ -73,9 +73,12 @@
             </div>
         </section>
         <div class="container-wrap">
-            <section class="top3">
+            <section class="top3 sec">
                 <div class="inner">
-                    <h3 class="tit">다시 찾는 인기 여행지 TOP3</h3>
+                    <header class="sec-header">
+                        <h3 class="tit">다시 찾는 인기 여행지 TOP3</h3>
+                        <p class="desc"></p>
+                    </header>
                     <div class="top3-wrap clearfix">
                         <article class="top3-article">
                             <figure><img src="img/img_topplace01.jpg" alt=""></figure>
@@ -104,9 +107,12 @@
                     </div>
                 </div>
             </section>
-            <section class="bbs clearfix">
-                <h3 class="hidden">sns와 게시판</h3>
-                <div class="inner">
+            <section class="bbs sec">
+                <div class="inner clearfix">
+                    <header class="sec-header hidden">
+                        <h3 class="tit">sns와 게시판</h3>
+                        <p class="desc"></p>
+                    </header>
                     <article class="sns">
                         <h4 class="hidden">sns</h4>
                         <a href="#">카카오톡 1:1 상담</a>
@@ -135,9 +141,30 @@
             <button type="button" class="quick-top">TOP</button>
         </aside>
     </main>
-    <footer>
-        <div class="inner"></div>
-    </footer>
+    <footer class="footer">
+        <div class="inner">
+          <ul class="f-menu clearfix">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+          </ul>
+          <div class="f-sns">
+            <a href="#">페이스북</a>
+            <a href="#">트위터</a>
+            <a href="#">유튜브</a>
+          </div>
+          <div class="f-addr">
+            <strong>투어리스트인투어</strong>
+            <ul class="clearfix">
+              <li>
+                <address>서울특별시 종로구 혜화동 9길 청운빌딩 5층</address>
+              </li>
+              <li>대표전화 : 02-1234-5678</li>
+              <li>E-mail : titour@touristintour.com</li>
+            </ul>
+            <p class="f-copy">Copyright(c) TouristInTour all right reserved</p>
+          </div>
+        </div>
+      </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -158,6 +185,21 @@
         autoplayDisableOnInteraction: false
       });
     });       
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        isHide = true; //변수 하나를 설정 화면에 보이면 true, 보이지 않으면 false;
+        $('.all-menu').on('click',function(){
+            if(isHide){ //보이니까 숨기고
+            isHide = false;
+            $('.nav-wrap').show();   //요소를 안보이게 한다.
+            }else{  //안보이니까 보이게 한다
+            isHide = true;
+            $('.nav-wrap').hide();   //요소를 보이게 한다
+            }
+        })
+        })
     </script>
 </body>
 </html>
