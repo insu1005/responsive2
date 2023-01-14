@@ -204,7 +204,6 @@ MAX-WIDTH : 1280
     background-size: 100% 100%; background-position: 0 0;
   }
   .top3 .tit{ color: #fff;}
-  .top3-wrap{}
   .top3-article{
     float: none;
     width: 100%;
@@ -219,7 +218,6 @@ MAX-WIDTH : 1280
     width: calc( ( 100% - 20px ) / 2 );
     margin-right: 20px;
   }
-  .top3-article figure img{ }
   .top3-article figure .hit-detail { padding-top: 17vw;}
   .top3-article figure .hit-detail strong { font-size: 8vw; }
   .top3-article figure .hit-detail em { font-size: 2vw; }
@@ -234,8 +232,6 @@ MAX-WIDTH : 1280
   .top3-article-txt .more{ font-size: 2vw;}
 
   /* bbs */
-  .bbs{}
-  .bbs article{}
   .sns{
     width: 48%;
     margin-right: 4%;
