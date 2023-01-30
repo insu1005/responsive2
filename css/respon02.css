@@ -143,30 +143,21 @@
   margin-bottom: 20px;
   font-weight: 700; font-size: 30px;
 }
-.notice-list{
-  width: 100%;
-}
-.notice-list li{
-  width: 100%;
-  height: 30px;
-}
+.notice-list{ width: 100%; }
+.notice-list li{ width: 100%; height: 30px; }
 .notice-list li a{
   display: block;
   width: 100%;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.notice .more{
-  position: absolute; right: 0;top: 0;
-}
+.notice .more{ position: absolute; right: 0;top: 0; }
 
 /* aside */
 .quick{
   width: 130px;
   position: fixed; right: 0; top: 100px; z-index: 20;
 }
-.quick ul{
-  background-color: #5e2bb8;
-}
+.quick ul{ background-color: #5e2bb8; }
 .quick li{
   height: 50px;
   padding: 30px 0;
@@ -200,9 +191,7 @@ MAX-WIDTH : 1280
   /* MAIN-COMMON */
 
   /* top3 */
-  .top3 {
-    background-size: 100% 100%; background-position: 0 0;
-  }
+  .top3 { background-size: 100% 100%; background-position: 0 0; }
   .top3 .tit{ color: #fff;}
   .top3-article{
     float: none;
@@ -221,9 +210,7 @@ MAX-WIDTH : 1280
   .top3-article figure .hit-detail { padding-top: 17vw;}
   .top3-article figure .hit-detail strong { font-size: 8vw; }
   .top3-article figure .hit-detail em { font-size: 2vw; }
-  .top3-article-txt{ 
-    padding-top: 130px;  
-  }
+  .top3-article-txt{ padding-top: 130px; }
   .top3-article-txt em{ 
     margin-bottom: 50px; 
     font-size: 3vw;
@@ -289,16 +276,12 @@ MAX-WIDTH : 780
       display: block;
      }
 
-     .top3-article-txt{ 
-      padding-top: 16vw;  
-    }
+     .top3-article-txt{ padding-top: 16vw; }
     .top3-article-txt em {
       margin-bottom: 6vw;
       font-size: 3vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     }
-    .top3-article-txt p {
-      margin-bottom: 4vw;
-    }
+    .top3-article-txt p { margin-bottom: 4vw; }
     /* bbs */
     .bbs article{
       float: none;
