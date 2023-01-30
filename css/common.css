@@ -34,8 +34,6 @@ img{display: block;}
 .tnb a{ line-height: 30px; color: #777;}
 
 /* gnb */
-.gnb{}
-.gnb > ul{}
 .gnb .depth1{ 
   float: left;
   position: relative; z-index: 100;
